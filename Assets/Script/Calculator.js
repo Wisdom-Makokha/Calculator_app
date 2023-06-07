@@ -2,5 +2,5 @@
 let x = 50;
 console.log(x);  
 
-let displayinput = document.getElementById("1").value;
-document.getElementById("display")
+let displayinput = document.getElementById("display").value;
+console.log(displayinput);

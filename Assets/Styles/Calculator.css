@@ -5,11 +5,14 @@
 
 body
 {
-    margin-left: 33%; 
     background-color: azure; 
 }
 
-
+#calculatorlayout
+{
+    background-color: rgb(33, 91, 141);
+    padding-left: 10%;
+}
 
 #display
 {
