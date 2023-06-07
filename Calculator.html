@@ -3,47 +3,48 @@
     <head>
         <meta charset="utf-8" /> 
         <title>Calculator</title>
-        <link rel="stylesheet" href="./assets/styles/Calculator.css" /> 
+        <link rel="stylesheet" href="./Assets/Styles/Calculator.css" />  
     </head>
     <body>
         <h1>SUPER CALCULATOR. </h1>
         <form>
             <div id="calculatorlayout">
-                <input type="text" id="display" />
+                <input type="text" id="display" disabled="true"/>
                 <div id="buttonlayout">
                     <div class="numberbuttons">
                         <div class="row3">
-                            <input type="button" value="9" id="9" class="numberbuttonappearance"/>
-                            <input type="button" value="8" id="8" class="numberbuttonappearance"/>
-                            <input type="button" value="7" id="7" class="numberbuttonappearance"/>
+                            <input type="button" value="9" id="9" onclick="displayinput(9)"/>
+                            <input type="button" value="8" id="8" onclick="displayinput(8)"/>
+                            <input type="button" value="7" id="7" onclick="displayinput(7)"/>
                         </div>
                         <div class="row2">
-                            <input type="button" value="6" id="6" class="numberbuttonappearance"/>
-                            <input type="button" value="5" id="5" class="numberbuttonappearance"/>
-                            <input type="button" value="4" id="4" class="numberbuttonappearance"/>
+                            <input type="button" value="6" id="6" onclick="displayinput(6)"/>
+                            <input type="button" value="5" id="5" onclick="displayinput(5)"/>
+                            <input type="button" value="4" id="4" onclick="displayinput(4)"/>
                         </div>
                         <div class="row1">
-                            <input type="button" value="3" id="3" class="numberbuttonappearance"/>
-                            <input type="button" value="2" id="2" class="numberbuttonappearance"/>
-                            <input type="button" value="1" id="1" class="numberbuttonappearance"/>
+                            <input type="button" value="3" id="3" onclick="displayinput(3)"/>
+                            <input type="button" value="2" id="2" onclick="displayinput(2)"/>
+                            <input type="button" value="1" id="1" onclick="displayinput(1)"/>
                         </div>
-                        <div class = row0>
-                            <input type="button" value="0" id="0" class="numberbuttonappearance"/>
+                        <div class="row0">
+                            <input type="button" value="0" id="0" onclick="displayinput(0)"/>
                         </div>
                     </div>
 
                     <div class="operatorbutton">
-                        <input type="button" value="+" id="+" class="operatorbuttonappearance"/> <br />
-                        <input type="button" value="-" id="-" class="operatorbuttonappearance"/> <br />
-                        <input type="button" value="*" id="*" class="operatorbuttonappearance"/> <br />
-                        <input type="button" value="/" id="/" class="operatorbuttonappearance"/> <br />
+                        <input type="button" value="+" id="+" onclick="displayinput('+')"/> <br />
+                        <input type="button" value="-" id="-" onclick="displayinput('-')"/> <br />
+                        <input type="button" value="*" id="*" onclick="displayinput('*')"/> <br />
+                        <input type="button" value="/" id="/" onclick="displayinput('/')"/> <br />
+                    </div>
+                    <div class="operatorbutton2">
+                        <input type="button" value="%" id="%" onclick="displayinput('%')"/><br />
+                        <input type="button" value="=" id="=" onclick="">
                     </div>
                 </div>
             </div>
         </form>
-
-        <script>
-            
-        </script>
+        <script src="./Assets/script/Calculator.js"></script>
     </body>
 </html>
