@@ -1,0 +1,47 @@
+/* h1{
+    color: blue;
+    text-align: center;
+} */
+
+body
+{
+    margin-left: 33%; 
+    background-color: azure; 
+}
+
+
+
+#display
+{
+    height: 50px;
+    width: 320px;
+    border-width: 3px;
+    background-color: rgb(160, 186, 120);
+    margin-bottom: 10px;
+}
+
+#buttonlayout
+{
+    display: flex;
+}
+
+.numberbuttonappearance
+{
+    width: 70px;
+    font-size: 200%;
+    padding: 20px;
+    border-width: 4px;
+    background-color: rgb(156, 235, 223);
+    margin-bottom: 3px;
+}
+
+.operatorbuttonappearance
+{
+    width: 80px;
+    font-size: 200%;
+    margin-left: 20px;
+    padding: 20px;
+    border-width: 4px;
+    background-color: rgb(156, 197, 235);
+    margin-bottom: 3px;
+}
