@@ -1,16 +1,17 @@
 //this is a javascript for a calculator
-let x = 50;
-console.log(x);
+
+//this function is used to print the input from the calculator buttons
+//to the display text field
+let result;
+let num1 = 0.1;
+let num2 = 0.1;
+let operator;
 
 function displayinput(temp)
 {
-    let result = (document.getElementById("display").value +=temp);
+    result = (document.getElementById("display").value +=temp);
 
+    console.log(result);
     return result;
 }
 
-console.log(document.getElementById("display").value);
-
-let message = "abcdefghijklmnopqrstuvwxyz";
-
-console.log(message[1]);
