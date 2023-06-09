@@ -22,14 +22,14 @@ function cleardisplay()
 function backspace()
 {
     result = document.getElementById("dispaly");
-    
+
 }
 
 function numberextract(pos1, pos2)
 {
     result = document.getElementById("display").value;
     console.log(result);
-    let integer = [];
+    let integer = "";
 
     if(pos1 === pos2)
     {
@@ -37,7 +37,7 @@ function numberextract(pos1, pos2)
     }
 
     for(let i = 0; i < pos2; i++, pos1++)
-        integer[i] = result[pos1];
+        integer += result[pos1];
 
     console.log(integer);
 
