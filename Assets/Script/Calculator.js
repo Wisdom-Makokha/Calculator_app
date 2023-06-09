@@ -3,10 +3,10 @@
 //this function is used to print the input from the calculator buttons
 //to the display text field
 let result;
-let finish = 708560366989510594500921817777;
-let num1 = 708560366989510594500921817777;
-let num2 = 708560366989510594500921817777;
-let prime = 708560366989510594500921817777;
+let finish = 708560366989;
+let num1 = 708560366989;
+let num2 = 708560366989;
+let prime = 708560366989;
 let operator;
 
 function displayinput(temp)
@@ -14,11 +14,22 @@ function displayinput(temp)
     (document.getElementById("display").value += temp);
 }
 
+function cleardisplay()
+{
+    document.getElementById("display").value = "";
+}
+
+function backspace()
+{
+    result = document.getElementById("dispaly");
+    
+}
 
 function numberextract(pos1, pos2)
 {
-    let numbervalue;
-    let integer = "";
+    result = document.getElementById("display").value;
+    console.log(result);
+    let integer = [];
 
     if(pos1 === pos2)
     {
@@ -28,7 +39,11 @@ function numberextract(pos1, pos2)
     for(let i = 0; i < pos2; i++, pos1++)
         integer[i] = result[pos1];
 
-    numbervalue = parseInt(integer);
+    console.log(integer);
+
+    const numbervalue = parseInt(integer, 10);  
+
+    console.log(numbervalue);
 
     return numbervalue;
 }
@@ -52,6 +67,8 @@ function resultfind()
             break;
         }
     }
+    
+    console.log(x);
     console.log(operator);
 
     num1 = numberextract(0, x);
@@ -112,17 +129,13 @@ function resultfind()
                 }
             case '+':
                 if(num1 === prime)
-                {
                     num1 = 0;
-                }
 
                 finish = num1 + num2;
                 break;
             case '-':
                 if(num1 === prime)
-                {
                     num1 = 0;
-                }
                 finish = num1 - num2;
                 break;
         }
