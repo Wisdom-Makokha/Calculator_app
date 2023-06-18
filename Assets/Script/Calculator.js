@@ -82,7 +82,7 @@ function numberextract(pos1, pos2)
 
         console.log(integer);
 
-        const numbervalue = parseInt(integer, 10);  
+        const numbervalue = parseFloat(integer, 10);  
 
         console.log(numbervalue);
 
@@ -113,7 +113,7 @@ function resultfind()
     //the operator is then gotten and stored in its variable
     for(; i < limit; i++)
     {
-        if(result[i] >= '0' && result[i] <= '9')
+        if((result[i] >= '0' && result[i] <= '9') || result[i] === '.')
             continue;
         else
         {
@@ -200,7 +200,7 @@ function resultfind()
                 finish = num1 - num2;
                 break;
             default:
-                errormsg = operator;
+                finish = num1;
                 break;
         }
     }

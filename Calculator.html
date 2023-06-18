@@ -4,45 +4,46 @@
         <meta charset="utf-8" /> 
         <title>Calculator</title>
         <link rel="stylesheet" href="./Assets/Styles/Calculator.css" />  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>SUPER CALCULATOR. </h1>
         <form>
             <div id="calculatorlayout">
-                <input type="text" id="display" disabled="true"/>
-                <div id="buttonlayout">
-                    <div class="numberbuttons">
-                        <div class="row3">
-                            <input type="button" value="9" id="9" onclick="displayinput(9)"/>
-                            <input type="button" value="8" id="8" onclick="displayinput(8)"/>
-                            <input type="button" value="7" id="7" onclick="displayinput(7)"/>
-                        </div>
-                        <div class="row2">
-                            <input type="button" value="6" id="6" onclick="displayinput(6)"/>
-                            <input type="button" value="5" id="5" onclick="displayinput(5)"/> 
-                            <input type="button" value="4" id="4" onclick="displayinput(4)"/>
-                        </div>
-                        <div class="row1">
-                            <input type="button" value="3" id="3" onclick="displayinput(3)"/>
-                            <input type="button" value="2" id="2" onclick="displayinput(2)"/>
-                            <input type="button" value="1" id="1" onclick="displayinput(1)"/>
-                        </div>
-                        <div class="row0">
-                            <input type="button" value="0" id="0" onclick="displayinput(0)"/>
-                            <input type="button" value="c" id="c" onclick="cleardisplay()"/>
-                            <input type="button" value="bs" id="bs" onclick="backspace()" />
-                        </div>
+                <div>
+                    <input type="text" id="display" disabled="true">
+                </div>
+                <div>
+                    <div id="row0">
+                        <input type="button" class="deletebutton" value="c" id="c" onclick="cleardisplay()"/>
+                        <input type="button" class="extrabutton" value="bs" id="bs" onclick="backspace()">
+                        <input type="button" class="operatorbutton" value="%" id="%" onclick="displayinput('%')"/>
                     </div>
-
-                    <div class="operatorbutton">
-                        <input type="button" value="+" id="+" onclick="displayinput('+')"/> <br />
-                        <input type="button" value="-" id="-" onclick="displayinput('-')"/> <br />
-                        <input type="button" value="*" id="*" onclick="displayinput('*')"/> <br />
-                        <input type="button" value="/" id="/" onclick="displayinput('/')"/> <br />
+                    <div id="row1">
+                        <input type="button" class="numberbutton" value="7" id="7" onclick="displayinput(7)"/>
+                        <input type="button" class="numberbutton" value="8" id="8" onclick="displayinput(8)"/>
+                        <input type="button" class="numberbutton" value="9" id="9" onclick="displayinput(9)"/>
+                        <input type="button" class="operatorbutton" value="/" id="/" onclick="displayinput('/')"/>
                     </div>
-                    <div class="operatorbutton2">
-                        <input type="button" value="%" id="%" onclick="displayinput('%')"/><br />
-                        <input type="button" value="=" id="=" onclick="resultfind()"/>
+                    <div id="row2">
+                        <input type="button" class="numberbutton" value="4" id="4" onclick="displayinput(4)"/>
+                        <input type="button" class="numberbutton" value="5" id="5" onclick="displayinput(5)"/>
+                        <input type="button" class="numberbutton" value="6" id="6" onclick="displayinput(6)"/>
+                        <input type="button" class="operatorbutton" value="*" id="*" onclick="displayinput('*')"/>
+                    </div>
+                    <div id="row3">
+                        <input type="button" class="numberbutton" value="1" id="1" onclick="displayinput(1)"/>
+                        <input type="button" class="numberbutton" value="2" id="2" onclick="displayinput(2)"/>
+                        <input type="button" class="numberbutton" value="3" id="3" onclick="displayinput(3)"/>
+                        <input type="button" class="operatorbutton" value="-" id="-" onclick="displayinput('-')"/>
+                    </div>
+                    <div id="row4">
+                        <input type="button" class="extrabutton" value="." id="." onclick="displayinput('.')"/>
+                        <input type="button" class="numberbutton" value="0" id="0" onclick="displayinput(0)"/>
+                        <input type="button" class="operatorbutton" value="=" id="=" onclick="resultfind()"/>
+                        <input type="button" class="operatorbutton" value="+" id="+" onclick="displayinput('+')"/>
                     </div>
                 </div>
             </div>
@@ -50,3 +51,5 @@
         <script src="./Assets/script/Calculator.js"></script>
     </body>
 </html>
+
+                         

@@ -1,67 +1,56 @@
 h1{
     color: blue;
     text-align: center;
+    font-family: 'Barlow', sans-serif;
 }
 
 body
 {
-    background-color: azure;  
+    background-color: azure;
+    display: grid;
+    justify-content: center;
 }
 
 #calculatorlayout
 {
+    display:grid;
+    justify-content: center;
     background-color: rgb(33, 91, 141);
+    border-width: 20px;
+    border-radius: 5%;
+    width: 450px;
+    height: 550px
 } 
 
 #display
 {
     height: 50px;
-    width: 60%;
-    border-width: 3px;
+    border-width: 4px;
+    border-color: rgb(150, 187, 91);
     background-color: rgb(160, 186, 120);
     font-size: 200%;
     text-align: right;
-    margin-bottom: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 20px;
+    border-radius:5%;
 }
 
-#buttonlayout
+input[type="button"]
 {
-    display: flex;
-    justify-content: center;
-}
-
-.numberbuttons input[type="button"]
-{
+    border-radius: 15%;
+    border-width: 4px;
+    border-color: black;
     width: 70px;
     height: 85px;
+    margin-bottom: 3px;
     font-size: 200%;
-    border-width: 4px;
+}
+
+.numberbutton
+{
     background-color: rgb(156, 235, 223);
-    margin-bottom: 3px;
 }
 
-
-.operatorbutton input[type="button"]
+.operatorbutton
 {
-    width: 80px;
-    height: 85px;
-    font-size: 200%;
-    margin-left: 20px;
-    border-width: 4px;
     background-color: rgb(156, 197, 235);
-    margin-bottom: 3px;
-}
-
-.operatorbutton2 input[type="button"]
-{
-    height: 170px;
-    width: 80px;
-    font-size: 200%;
-    margin-left: 20px;
-    padding: 20px;
-    border-width: 4px;
-    background-color: rgb(156, 197, 235);
-    margin-bottom: 3px;
 }
